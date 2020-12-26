@@ -1,0 +1,422 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head class="container section-colunm no-gutter">
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" integk rel="stylesheet" href="assets/css/style.css" type="text/css">
+      <title>Xascapade Travel</title>
+      <section>
+
+  <body class="container-fluid ">
+      <div>
+          <div>
+              <span>
+                  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                      <a class="navbar-brand" href="index.html">XASCAPADE </a>
+
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                      </button>
+
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav mr-auto">
+                              <li class="nav-item active">
+                                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="about.html" aria-labelledby="navbarDropdown">About
+                                  </a>
+
+                              <li class="nav-item">
+                                  <a class="nav-link enabled" href="contact.html">Contact</a>
+                              </li>
+                          </ul>
+
+
+
+                      </div>
+              </span>
+          </div>
+      </div>
+      </nav>
+
+      <main>
+          <h1><span>XAS</span>CAPADE</h1>
+          <h5>Explore the World</h5>
+
+
+          <body class="light-grey">
+              <!-- Navigation Bar -->
+              <div class="bar white border-bottom xlarge">
+                  <a href="#" class="bar-item button text-red hover-red"><b><i class="fa fa-map-marker margin-right"></i>Logo</b></a>
+                  <a href="#" class="bar-item w3-button right hover-red text-grey"><i class="fa fa-search"></i></a>
+              </div>
+
+
+              <!-- Header -->
+              <header class="display-container content hide-small" style="max-width:1500px">
+                  <div class="display-cover" style="width:65%">
+                      <div class="bar mr-12 tr-3 container-fluid">
+                          <button class="bar-item button tablink" onclick="openLink(event, 'Flight');"><i class="fa fa-plane w3-margin-right"></i>Flight</button>
+                          <button class="bar-item button tablink" onclick="openLink(event, 'Hotel');"><i class="fa fa-bed margin-right"></i>Hotel</button>
+                          <button class="bar-item button tablink" onclick="openLink(event, 'Car');"><i class="fa fa-car margin-right"></i>Rental</button>
+                      </div>
+
+                      <!-- Tabs -->
+                      <div id="Flight" class="container white padding-16 myLink">
+                          <h3>Book holiday packages with us</h3>
+                          <div class="row-padding" style="margin:0 -16px;">
+                              <div class="half">
+                                  <label>From</label>
+                                  <input class="input border" type="text" placeholder="Departing from">
+                              </div>
+                              <div class="half">
+                                  <label>To</label>
+                                  <input class="input border" type="text" placeholder="Arriving at">
+                              </div>
+                          </div>
+                          <p><button class="button dark-grey">Search and find dates</button></p>
+                      </div>
+                      <form autocomplete="off" action="/action_page.php">
+                          <div class="autocomplete" style="width:300px;">
+                              <input id="myInput" type="text" name="myCountry" placeholder="Country">
+                          </div>
+                          <input type="submit">
+                      </form>
+
+                      <div id="Hotel" class="container white padding-16 myLink">
+                          <h3>Find the best hotels</h3>
+                          <p>Book a hotel with us and get the best fares and promotions.</p>
+                          <p>We know hotels - we know comfort.</p>
+                          <p><button class="button dark-grey">Search Hotels</button></p>
+                      </div>
+
+                      <div id="Car" class="container white padding-16 myLink">
+                          <h3>Best car rental in the world!</h3>
+                          <p><span class="tag deep-orange">DISCOUNT!</span> Special offer if you book today: 25% off
+                              anywhere in the world with CarServiceRentalRUs</p>
+                          <input class="input border" type="text" placeholder="Pick-up point">
+
+                          <p><button class="button dark-grey">Search Availability</button></p>
+                      </div>
+                  </div>
+
+              </header>
+              <div class="bar white border-bottom xlarge">
+                  <a href="#" class="bar-item button text-red hover-red"><b><i class="fa fa-map-marker margin-right"></i><a class="navbar-brand" href="index.html">
+
+                              <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                                  <source srcset="assets/images/xas.png" type="image/svg+xml">
+                                  <img src="assets/images/beach.jpg" class="img-fluid img-thumbnail" alt="Rooms">
+                              </picture>
+                              <h5>Explore the World</h5>
+                          </a></b></a>
+                  <a href="search.html" class="bar-item w3-button right hover-red text-grey"><i class="fa fa-search"></i></a>
+              </div>
+              <div class="inline-block">
+                  <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                      <source srcset="assets/images/beach.jpg" type="image/svg+xml">
+                      <img src="assets/images/beach.jpg" class="img-fluid img-thumbnail" alt="Rooms">
+                  </picture>
+                  <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                      <source srcset="assets/images/norway.jpg" type="image/svg+xml">
+                      <img src="assets/images/norway.jpg" class="img-fluid img-thumbnail" alt="Rooms">
+                  </picture>
+                  <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                      <source srcset="assets/images/jade-m.jpg" type="image/svg+xml">
+                      <img src="assets/images/jade-m.jpg" class="img-fluid img-thumbnail" alt="Rooms">
+                  </picture>
+
+              </div>
+          </body>
+          <!-- Newsletter -->
+          <!-- w3school snippets -->
+          <!-- The video -->
+          <video autoplay muted loop id="myVideo">
+              <source src="rain.mp4" type="video/mp4">
+          </video>
+
+          <!-- Optional: some overlay text to describe the video -->
+          <div class="content">
+              <h1>Heading</h1>
+              <p>Lorem ipsum...</p>
+              <!-- Use a button to pause/play the video with JavaScript -->
+              <button id="myBtn" onclick="myFunction()">Pause</button>
+          </div>
+          <!-- Page content -->
+          <div class="w3-content" style="max-width:1100px;">
+
+              <!-- Good offers -->
+              <div class="w3-container w3-margin-top">
+                  <h3>Good Offers Right Now</h3>
+                  <h6>Up to <strong>50%</strong> discount.</h6>
+              </div>
+              <div class="w3-row-padding w3-text-white w3-large">
+                  <div class="w3-half w3-margin-bottom">
+                      <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                          <source srcset="assets/images/cirque.jpg" type="image/svg+xml">
+                          <img src="assets/images/cirque.jpg" class="img-fluid img-thumbnail" alt="Rooms">
+                      </picture>
+                      <span class="w3-display-bottomleft w3-padding">Cinque Terre</span>
+                  </div>
+
+              </div>
+              <div class="w3-half">
+                  <div class="w3-row-padding" style="margin:0 -16px">
+                      <div class="w3-half w3-margin-bottom">
+                          <div class="w3-display-container">
+
+                              <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                                  <source srcset="assets/images/newyork.jpg" type="image/svg+xml">
+                                  <img src="assets/images/newyork.jpg" class="img-fluid img-thumbnail" alt="Rooms">
+                              </picture>
+                              <span class="w3-display-bottomleft w3-padding">New York</span>
+                          </div>
+                      </div>
+                      <div class="w3-half w3-margin-bottom">
+                          <div class="w3-display-container">
+                              <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                                  <source srcset="assets/images/sanfran.jpg" type="image/svg+xml">
+                                  <img src="assets/images/sanfran.jpg" class="img-fluid img-thumbnail" alt="Rooms">
+                              </picture>
+                              <span class="w3-display-bottomleft w3-padding">San Francisco</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="w3-row-padding" style="margin:0 -16px">
+                      <div class="w3-half w3-margin-bottom">
+                          <div class="w3-display-container">
+                              <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                                  <source srcset="assets/images/pisa.jpg" type="image/svg+xml">
+                                  <img src="assets/images/pisa.jpg" class="img-fluid img-thumbnail" alt="Rooms">
+                              </picture>
+                              <span class="w3-display-bottomleft w3-padding">Pisa</span>
+                          </div>
+                      </div>
+                      <div class="w3-half w3-margin-bottom">
+                          <div class="w3-display-container">
+                              <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                                  <source srcset="assets/images/paris.jpg" type="image/svg+xml">
+                                  <img src="assets/images/paris.jpg" class="img-fluid img-thumbnail" alt="Rooms">
+                              </picture>
+                              <span class="w3-display-bottomleft w3-padding">Paris</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Explore Nature -->
+          <div class="w3-container">
+              <h3>Explore Nature</h3>
+              <p>Travel with us and see nature at its finest.</p>
+          </div>
+          <div class="w3-row-padding">
+              <div class="w3-half w3-margin-bottom">
+                  <img src="assets/images/westcoast.jpg" alt="Norway" style="width:100%">
+                  <div class="w3-container w3-white">
+                      <h3>West Coast, Norway</h3>
+                      <p class="w3-opacity">Roundtrip from $79</p>
+                      <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                      <button class="w3-button w3-margin-bottom">Buy Tickets</button>
+                  </div>
+              </div>
+              <div class="w3-half w3-margin-bottom">
+                  <img src="assets/images/austriamt.jpg" alt="Austria" style="width:100%">
+                  <div class="w3-container w3-white">
+                      <h3>Mountains, Austria</h3>
+                      <p class="w3-opacity">One-way from $39</p>
+                      <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                      <button class="w3-button w3-margin-bottom">Buy Tickets</button>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="w3-container">
+              <div class="w3-panel w3-padding-16 w3-black w3-opacity w3-card w3-hover-opacity-off">
+                  <h2>Get the best offers first!</h2>
+                  <p>Join our newsletter.</p>
+                  <label>E-mail</label>
+                  <input class="w3-input w3-border" type="text" placeholder="Your Email address">
+                  <button type="button" class="w3-button w3-red w3-margin-top">Subscribe</button>
+              </div>
+          </div>
+
+          <!-- Contact -->
+
+          </div>
+
+          <!-- Contact -->
+
+          <Section class="container-fluid inline-block">
+              <div class="background-image" id="bgimg1">
+                  <hr class="my-4 inline-block col-sm-4" id="bgimg1">
+
+
+                  <!-- End page content -->
+              </div>
+              <!-- w3school snippet -->
+              <!-- Footer -->
+              <footer class="container-fluid  opacity margin-bottom">
+                  <h5>Find Us On</h5>
+                  <div class="xlarge padding-16">
+                      <i class="fa fa-facebook-official hover-opacity"></i>
+                      <i class="fa fa-instagram hover-opacity"></i>
+                      <i class="fa fa-snapchat hover-opacity"></i>
+                      <i class="fa fa-pinterest-p hover-opacity"></i>
+                      <i class="fa fa-twitter hover-opacity"></i>
+                      <i class="fa fa-linkedin hover-opacity"></i>
+                  </div>
+
+
+                  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="hover-text-green">Xascapade</a></p>
+
+              </footer>
+
+              <script>
+                  // Tabs
+                  function openLink(evt, linkName) {
+                      var i, x, tablinks;
+                      x = document.getElementsByClassName("myLink");
+                      for (i = 0; i < x.length; i++) {
+                          x[i].style.display = "none";
+                      }
+                      tablinks = document.getElementsByClassName("tablink");
+                      for (i = 0; i < x.length; i++) {
+                          tablinks[i].className = tablinks[i].className.replace(" teal", "");
+                      }
+                      document.getElementById(linkName).style.display = "block";
+                      evt.currentTarget.className += " teal";
+                  }
+                  // autocomplete w3schhol snippet
+                  function autocomplete(inp, arr) {
+                      /*the autocomplete function takes two arguments,
+                      the text field element and an array of possible autocompleted values:*/
+                      var currentFocus;
+                      /*execute a function when someone writes in the text field:*/
+                      inp.addEventListener("input", function(e) {
+                          var a, b, i, val = this.value;
+                          /*close any already open lists of autocompleted values*/
+                          closeAllLists();
+                          if (!val) {
+                              return false;
+                          }
+                          currentFocus = -1;
+                          /*create a DIV element that will contain the items (values):*/
+                          a = document.createElement("DIV");
+                          a.setAttribute("id", this.id + "autocomplete-list");
+                          a.setAttribute("class", "autocomplete-items");
+                          /*append the DIV element as a child of the autocomplete container:*/
+                          this.parentNode.appendChild(a);
+                          /*for each item in the array...*/
+                          for (i = 0; i < arr.length; i++) {
+                              /*check if the item starts with the same letters as the text field value:*/
+                              if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+                                  /*create a DIV element for each matching element:*/
+                                  b = document.createElement("DIV");
+                                  /*make the matching letters bold:*/
+                                  b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+                                  b.innerHTML += arr[i].substr(val.length);
+                                  /*insert a input field that will hold the current array item's value:*/
+                                  b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+                                  /*execute a function when someone clicks on the item value (DIV element):*/
+                                  b.addEventListener("click", function(e) {
+                                      /*insert the value for the autocomplete text field:*/
+                                      inp.value = this.getElementsByTagName("input")[0].value;
+                                      /*close the list of autocompleted values,
+                                      (or any other open lists of autocompleted values:*/
+                                      closeAllLists();
+                                  });
+                                  a.appendChild(b);
+                              }
+                          }
+                      });
+                      // Get the video
+                      var video = document.getElementById("myVideo");
+
+                      // Get the button
+                      var btn = document.getElementById("myBtn");
+
+                      // Pause and play the video, and change the button text
+                      function myFunction() {
+                          if (video.paused) {
+                              video.play();
+                              btn.innerHTML = "Pause";
+                          } else {
+                              video.pause();
+                              btn.innerHTML = "Play";
+                          }
+                      }
+                      /*execute a function presses a key on the keyboard:*/
+                      inp.addEventListener("keydown", function(e) {
+                          var x = document.getElementById(this.id + "autocomplete-list");
+                          if (x) x = x.getElementsByTagName("div");
+                          if (e.keyCode == 40) {
+                              /*If the arrow DOWN key is pressed,
+                              increase the currentFocus variable:*/
+                              currentFocus++;
+                              /*and and make the current item more visible:*/
+                              addActive(x);
+                          } else if (e.keyCode == 38) { //up
+                              /*If the arrow UP key is pressed,
+                              decrease the currentFocus variable:*/
+                              currentFocus--;
+                              /*and and make the current item more visible:*/
+                              addActive(x);
+                          } else if (e.keyCode == 13) {
+                              /*If the ENTER key is pressed, prevent the form from being submitted,*/
+                              e.preventDefault();
+                              if (currentFocus > -1) {
+                                  /*and simulate a click on the "active" item:*/
+                                  if (x) x[currentFocus].click();
+                              }
+                          }
+                      });
+
+                      function addActive(x) {
+                          /*a function to classify an item as "active":*/
+                          if (!x) return false;
+                          /*start by removing the "active" class on all items:*/
+                          removeActive(x);
+                          if (currentFocus >= x.length) currentFocus = 0;
+                          if (currentFocus < 0) currentFocus = (x.length - 1);
+                          /*add class "autocomplete-active":*/
+                          x[currentFocus].classList.add("autocomplete-active");
+                      }
+
+                      function removeActive(x) {
+                          /*a function to remove the "active" class from all autocomplete items:*/
+                          for (var i = 0; i < x.length; i++) {
+                              x[i].classList.remove("autocomplete-active");
+                          }
+                      }
+
+                      function closeAllLists(elmnt) {
+                          /*close all autocomplete lists in the document,
+                          except the one passed as an argument:*/
+                          var x = document.getElementsByClassName("autocomplete-items");
+                          for (var i = 0; i < x.length; i++) {
+                              if (elmnt != x[i] && elmnt != inp) {
+                                  x[i].parentNode.removeChild(x[i]);
+                              }
+                          }
+                      }
+                      /*execute a function when someone clicks in the document:*/
+                      document.addEventListener("click", function(e) {
+                          closeAllLists(e.target);
+                      });
+                  }
+              </script>
+
+  </body>
+
+  </html>
+
+  </main>
