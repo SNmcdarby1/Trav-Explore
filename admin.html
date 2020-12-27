@@ -1,289 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head class="container section-colunm no-gutter">
+<head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" integk rel="stylesheet" href="assets/css/style.css" type="text/css">
-    <title>Xascapade Travel</title>
-    <section>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg==" crossorigin="anonymous" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <title>XASCAPADE</title>
+
+</head>
+<a href="index.html" class="brand-logo">
+
+    <img src="assets/images/xas (1).png" class="img-fluid img-thumbnail" alt="Rooms">
+
+    Xascapade
+</a>
+<!-- materialize snippets -->
+<nav class="nav-extended bg-color-teal" class="navbar-fixed">
+    <nav class="nav-wrapper">
 
 
-<body class="container-fluid bg-teal accent-3 row no-gutter  container-fluid">
-
-
-    <nav class="navbar navbar-minimize-lg   col row navbar-teal bg-dark text-dark">
-        <ul class="row list-inline-item menuitem active">
-            <li class="col-6 col-sm ui-menu-color-home list-inline-item menuitem"><a>Home</a></li>
-            <li class="col-6 col-sm ui-menu-color-home list-inline-item menuitem"><a>About</a>
-                <ul class="col-6 list-inline-item menuitem">
-                    <li class="col-6 col-sm ui-menu-color-home list-inline-item menuitem"><a>Our Team</a></li>
-                    <li class="col-6 col-sm ui-menu-color-home list-inline-item menuitem"><a>Camp Sites</a>
-                    </li>
-                    <li class="col-6 col-sm ui-menu-color-home list-inline-item menuitem"><a>Mission &
-                            Vision</a></li>
-                </ul>
-            </li>
-            <li class="col-6 col-sm ui-menu-color-home list-inline-item menuitem"><a>Personal Details</a>
-                <ul class="col-6 list-inline-item menuitem">
-                    <li class="col-6 col-sm ui-menu-color-home list-inline-item menuitem"><a>Bookings</a></li>
-                    <li class="col-6 col-sm ui-menu-color-home list-inline-item menuitem"><a>Contact
-                            details</a></li>
-                    <li class="col-6 col-sm ui-menu-color-home list-inline-item menuitem"><a>Confirmation</a>
-                    </li>
-                </ul>
-            <li class="col-6 col-sm ui-menu-color-home list-inline-item menuitem"><a>Destinations</a></li>
-            <ul class="col-6 list-inline-item menuitem">
-                <li class="col-6 col-sm ui-menu-color-home list-inline-item menuitem"><a>Flights</a></li>
-                <li class="col-6 col-sm ui-menu-color-home list-inline-item menuitem"><a>Accommodation</a>
+        <ul class="nav-content">
+            <ul class="navbar fixed-content d-block float:right;">
+                <li class="nav"><a href="index.html">Home</a></li>
+                <li class="nav"><a href="product.html">Products</a></li>
+                <li class="nav"><a href="gallery.html">Gallery</a></li>
+                <li class="nav"><a href="contact.html">Contact us</a></li>
+            </ul>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons bar"></i></a>
+            <nav-a id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">About</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="admin.html">Admin
+                <li class="sidenav" id="mobile-demo">
+                <li><a href="about.html">About</a></li>
+                <li><a href="Packages.html">Packages</a></li>
+                <li><a href="admin.html">Admin</a></li>
                 </li>
-                <li class="col-6 col-sm ui-menu-color-home list-inline-item menuitem"><a>Car Rental</a></li>
-            </ul>
-            <li class="col-6 col-sm ui-menu-color-home list-inline-item menuitem"><a>Things to do</a></li>
-            <ul class="col-6 list-inline-item menuitem">
-                <li class="col-6 col-sm ui-menu-color-home list-inline-item menuitem"><a>Activities</a></li>
-                <li class="col-6 col-sm ui-menu-color-home list-inline-item menuitem"><a>Amenties</a></li>
-                <li class="col-6 col-sm ui-menu-color-home list-inline-item menuitem"><a>Tours</a></li>
-            </ul>
-            <li class="col-6 col-sm ui-menu-color-home list-inline-item menuitem"><a>Contacts</a></li>
-            <ul class="col-6 list-inline-item menuitem">
-                <li class="col-6 col-sm ui-menu-color-home list-inline-item menuitem"><a>Map</a></li>
-                <li class="col-6 col-sm ui-menu-color-home list-inline-item menuitem"><a>Directions</a></li>
-            </ul>
-
-        </ul>
+                <i class="material-icons bar"></i></a>
+                </a>
+            </nav-a>
 
     </nav>
-    </div>
-    </div>
-    </form>
+</nav>
+<main>
 
-
-    <footer class="table mr-12 tr-3 container  class=" container-fluid "">
-
-
-        <section class="col progress-section social"></section>
-        <!-- w3school snippet -->
-        <!-- Footer -->
-
-        <input type="text" name="username" placeholder="Username" required>
-        <input type="password" name="password" placeholder="Password" required>
-        <input type="submit" value="Login">
+    <footer class="col opacity margin-bottom">
+        <h5>Find Us On</h5>
+        <div class="xlarge padding-16">
+            <i class="fa fa-facebook-official hover-opacity"></i>
+            <i class="fa fa-instagram hover-opacity"></i>
+            <i class="fa fa-snapchat hover-opacity"></i>
+            <i class="fa fa-pinterest-p hover-opacity"></i>
+            <i class="fa fa-twitter hover-opacity"></i>
+            <i class="fa fa-linkedin hover-opacity"></i>
         </div>
+        <form action="/action_page.php">
+            <input type="file" id="myFile" name="filename">
+            <input type="submit">
         </form>
-        <form class="col" class="card autocomplete-items hide-small" action="/action_page.php">
-            <h6 style=" text-align:center wrap"></h6>
-
-            <h5 class="card autocomplete-items hide-small">Login with Social Media </h5>
-
-            <div class="row">
-                <a href="#" class="fb btn  btn content hide-small ">
-                    <i class="fa fa-facebook fa-fw"></i>
-                    Facebook
-                </a>
-                <a h ref="#" class="twitter btn content hide-small">
-                    <i class=" fa fa-twitter fa-fw"></i>
-                    Twitter
-
-                </a>
-                <a href="#" class="google btn  btn content hide-small">
-                    <i class="fa fa-google fa-fw"></i>
-                    Google+
-                </a>
-            </div>
-
-        </form>
-
-        <footer class="col opacity margin-bottom" class="container-fluid ">
-            <h5>Find Us On</h5>
-            <div class="xlarge padding-16">
-                <i class="fa fa-facebook-official hover-opacity"></i>
-                <i class="fa fa-instagram hover-opacity"></i>
-                <i class="fa fa-snapchat hover-opacity"></i>
-                <i class="fa fa-pinterest-p hover-opacity"></i>
-                <i class="fa fa-twitter hover-opacity"></i>
-                <i class="fa fa-linkedin hover-opacity"></i>
-            </div>
-            <form action="/action_page.php">
-                <input type="file" id="myFile" name="filename">
-                <input type="submit">
-            </form>
-            <!-- pop upform 3wschool snippet  -->
+        <!-- pop upform 3wschool snippet  -->
 
 
-            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="hover-text-green" class="container" style="background-color:#f7cc55"> Xascapade</a>
-            </p>
-            </section>
-            </form>
-        </Footer>
-        <script type="text/javascript" src="https://res.perfectibe.com/scripts/calendar.js"></script>
-        <script type="text/javascript" src="https://res.perfectibe.com/scripts/jsDate.js"></script>
-        <script type="text/javascript" src="https://res.perfectibe.com/scripts/pibe.js"></script>
-        <script type="text/javascript" src="https://res.perfectibe.com/scripts/dropdown.js"></script>
-        <script type="text/javascript">
-            var enable_dropdown = true; <
-            /script <!--Bootstrap snippet-- > <
-            script src = "https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity = "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin = "anonymous" >
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-        </script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-        </script>
-        <script>
-            // Tabs btn
-            function openLink(evt, linkName) {
-                var i, x, tablinks;
-                x = document.getElementsByClassName("myLink");
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                }
-                tablinks = document.getElementsByClassName("tablink");
-                for (i = 0; i < x.length; i++) {
-                    tablinks[i].className = tablinks[i].className.replace(" teal", "");
-                }
-                document.getElementById(linkName).style.display = "block";
-                evt.currentTarget.className += " teal";
-            }
-            // autocomplete w3schhol snippet
-            function autocomplete(inp, arr) {
-                /*the autocomplete function takes two arguments,
-                the text field element and an array of possible autocompleted values:*/
-                var currentFocus;
-                /*ex  ecute a function when someone writes in the text field:*/
-                inp.addEventListener("input", function(e) {
-                    var a, b, i, val = this.value;
-                    /*close any already open lists of autocompleted values*/
-                    closeAllLists();
-                    if (!val) {
-                        return false;
-                    }
-                    currentFocus = -1;
-                    /*create a DIV element that will contain the items (values):*/
-                    a = document.createElement("DIV");
-                    a.setAttribute("id", this.id + "autocomplete-list");
-                    a.setAttribute("class", "autocomplete-items");
-                    /*append the DIV element as a child of the autocomplete container:*/
-                    this.parentNode.appendChild(a);
-                    /*for each item in the array...*/
-                    for (i = 0; i < arr.length; i++) {
-                        /*check if the item starts wit the same letters as the text field value:*/
-                        if (arr[i].substr(0, val.length).toUpperCase() == val
-                            .toUpperCase()) {
-                            /*create a DIV element for each matching element:*/
-                            b = document.createElement(
-                                "DIV"); /*make the matching letters bold:*/
-                            b.innerHTML = "<strong>" + arr[i].substr(0, val.length) +
-                                "</strong>";
-                            b.innerHTML += arr[i].substr(val.length);
-                            /*insert a input field that will hold the current array item's value:*/
-                            b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
-                            /*execute a function when someone clicks on the item value (DIV element):*/
-                            b.addEventListener("click", function(e) {
-                                /*insert the value for the autocomplete text field:*/
-                                inp.value = this.getElementsByTagName("input")[0]
-                                    .value;
-                                /*close the list of autocopleted values,
-                                (or any other open lists of autocompleted values:*/
-                                closeAllLists();
-                            });
-                            a.appendChild(b);
-                        }
-                    }
-                });
-                // Get the video
-                var video = document.getElementById("myVideo");
-
-                // Get the b utton
-                var btn = docume nt.getElementById("myBtn");
-
-                // Pause and pla  y the video, and change the button text
-                function myFunct ion() {
-                    if (video.pa used) {
-                        vide o.play();
-                        btn.innerHTML = "Pause";
-                    }
-                    el se {
-                        video.pause();
-                        btn.innerHTML = "Play";
-                    }
-                }
-                /*execute a function presses a key on the keyboard:*/
-                inp.addEventListener("keydown", function(e) {
-                    var x = document.getElementById(this.id + "autocomplete-list");
-                    if (x) x = x.getElementsByTagName("div");
-                    if (e.keyCode == 40) {
-                        /*If the arrow DOWN key is pressed,
-                        increase the currentFocus variable:*/
-                        currentFocus++;
-                        /*and and make the current item more visible:*/
-                        addActive(x);
-                    }
-                    el se
-                    if (e.keyCode == 38) { //up
-                        /*If the arrow UP key is pressed,
-                        decrease the currentFocus variable:*/
-                        currentFocus--;
-                        /*and and make the current item more visible:*/
-                        addActive(x);
-                    } else if (e.keyCode == 13) {
-                        /*If the ENTER key is pressed, pevent the form from being submitted,*/
-                        e.preventDefault();
-                        if (currentFocus > -1) {
-                            /*and simulate a click on the "active" item:*/
-                            if (x) x[currentFocus].click();
-                        }
-                    }
-                });
-
-                function addActive(x) {
-                    /*a function to classify an item as "active":*/
-                    if (!x) return false;
-                    /*st   art by removing the "active" class on all items:*/
-                    removeActive(x);
-                    if (currentFocus >= x.length) currentFocs = 0;
-                    if (currentFocus < 0) currentFocus = (x.length - 1);
-                    /*add class "autocomplete-active":*/
-                    x[curren tFocus].classList.add("autocomplete-active");
-                }
-
-                func tion removeActive(x) {
-                    /*a function to remove the "active" class from all autocomplete items:*/
-                    for (var i = 0; i < x.length; i++) {
-                        x[i].classList.remove("autocomplete-active");
-                    }
-                }
-
-                func tion closeAllLists(elmnt) {
-                    /*close all autocomplete lists in the document,
-                    except the one passed as an argument:*/
-                    var x = document.getElementsByClassName("autocomplete-items");
-                    for (var i = 0; i < x.length; i++) {
-                        if (elmnt != x[i] && elmnt != inp) {
-                            x[i].parentNode.removeChild(x[i]);
-                        }
-                    }
-                }
-                /*execut   e a function when someone clicks in the document:*/
-                docu ment.addEventListener("click", function(e) {
-                    closeAllLists(e.target);
-                });
-            }
-        </script>
-
-
-</body>
-<i class="fas fa-minus-hexag   on    "></i>
-
-</html>
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="hover-text-green" class="container" style="background-color:#f7cc55"> Xascapade</a>
+        </p>
 </main>
+</section>
+</form>
+</Footer>
+<script type="text/javascript" src="https://res.perfectibe.com/scripts/calendar.js"></script>
+<script type="text/javascript" src="https://res.perfectibe.com/scripts/jsDate.js"></script>
+<script type="text/javascript" src="https://res.perfectibe.com/scripts/pibe.js"></script>
+<script type="text/javascript" src="https://res.perfectibe.com/scripts/dropdown.js"></script>
+<script type="text/javascript">
+    var enable_dropdown = true; <
+    /script <!--Bootstrap snippet-- > <
+    script src = "https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity = "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin = "anonymous" >
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+    // Tabs
+    function openLink(evt, linkName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("myLink");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" teal", "");
+        }
+        document.getElementById(linkName).style.display = "block";
+        evt.currentTarget.className += " teal";
+    }
+    // autocomplete w3schhol snippet
+    function autocomplete(inp, arr) {
+        /*the autocomplete function takes two arguments,
+        the text field element and an array of possible autocompleted values:*/
+        var currentFocus;
+        /*execute a function when someone writes in the text field:*/
+        inp.addEventListener("input", function(e) {
+            var a, b, i, val = this.value;
+            /*close any already open lists of autocompleted values*/
+            closeAllLists();
+            if (!val) {
+                return false;
+            }
+            currentFocus = -1;
+            /*create a DIV element that will contain the items (values):*/
+            a = document.createElement("DIV");
+            a.setAttribute("id", this.id + "autocomplete-list");
+            a.setAttribute("class", "autocomplete-items");
+            /*append the DIV element as a child of the autocomplete container:*/
+            this.parentNode.appendChild(a);
+            /*for each item in the array...*/
+            for (i = 0; i < arr.length; i++) {
+                /*check if the item starts with the same letters as the text field value:*/
+                if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+                    /*create a DIV element for each matching element:*/
+                    b = document.createElement("DIV");
+                    /*make the matching letters bold:*/
+                    b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+                    b.innerHTML += arr[i].substr(val.length);
+                    /*insert a input field that will hold the current array item's value:*/
+                    b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+                    /*execute a function when someone clicks on the item value (DIV element):*/
+                    b.addEventListener("click", function(e) {
+                        /*insert the value for the autocomplete text field:*/
+                        inp.value = this.getElementsByTagName("input")[0].value;
+                        /*close the list of autocompleted values,
+                        (or any other open lists of autocompleted values:*/
+                        closeAllLists();
+                    });
+                    a.appendChild(b);
+                }
+            }
+        });
+        // Get the video
+        var video = document.getElementById("myVideo");
+
+        // Get the button
+        var btn = document.getElementById("myBtn");
+
+        // Pause and play the video, and change the button text
+        function myFunction() {
+            if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+            } else {
+                video.pause();
+                btn.innerHTML = "Play";
+            }
+        }
+        /*execute a function presses a key on the keyboard:*/
+        inp.addEventListener("keydown", function(e) {
+            var x = document.getElementById(this.id + "autocomplete-list");
+            if (x) x = x.getElementsByTagName("div");
+            if (e.keyCode == 40) {
+                /*If the arrow DOWN key is pressed,
+                increase the currentFocus variable:*/
+                currentFocus++;
+                /*and and make the current item more visible:*/
+                addActive(x);
+            } else if (e.keyCode == 38) { //up
+                /*If the arrow UP key is pressed,
+                decrease the currentFocus variable:*/
+                currentFocus--;
+                /*and and make the current item more visible:*/
+                addActive(x);
+            } else if (e.keyCode == 13) {
+                /*If the ENTER key is pressed, prevent the form from being submitted,*/
+                e.preventDefault();
+                if (currentFocus > -1) {
+                    /*and simulate a click on the "active" item:*/
+                    if (x) x[currentFocus].click();
+                }
+            }
+        });
+
+        function addActive(x) {
+            /*a function to classify an item as "active":*/
+            if (!x) return false;
+            /*start by removing the "active" class on all items:*/
+            removeActive(x);
+            if (currentFocus >= x.length) currentFocus = 0;
+            if (currentFocus < 0) currentFocus = (x.length - 1);
+            /*add class "autocomplete-active":*/
+            x[currentFocus].classList.add("autocomplete-active");
+        }
+
+        function removeActive(x) {
+            /*a function to remove the "active" class from all autocomplete items:*/
+            for (var i = 0; i < x.length; i++) {
+                x[i].classList.remove("autocomplete-active");
+            }
+        }
+
+        function closeAllLists(elmnt) {
+            /*close all autocomplete lists in the document,
+            except the one passed as an argument:*/
+            var x = document.getElementsByClassName("autocomplete-items");
+            for (var i = 0; i < x.length; i++) {
+                if (elmnt != x[i] && elmnt != inp) {
+                    x[i].parentNode.removeChild(x[i]);
+                }
+            }
+        }
+        /*execute a function when someone clicks in the document:*/
+        document.addEventListener("click", function(e) {
+            closeAllLists(e.target);
+        });
+    }
+</script>
+
 </body>
 
 </html>
