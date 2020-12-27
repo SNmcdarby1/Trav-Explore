@@ -15,61 +15,78 @@
     <title>XASCAPADE</title>
 
 </head>
-<a href="index.html" class="brand-logo">
+<a href="#" class=" col s12 brand-logo">
 
-    <img src="assets/images/xas (1).png" class="img-fluid img-thumbnail" alt="Rooms">
+    <img src="assets/images/xas (1).png" class="img-fluid img-thumbnail" alt="logo">
 
     Xascapade
 </a>
+<img class="materialboxed" width="650" src="assets/images/nightcity.jpg">
+
+
 <!-- materialize snippets -->
-<nav class="nav-extended bg-color-teal" class="navbar-fixed">
-    <nav class="nav-wrapper">
+<nav class=" col s12 nav-extended d-inline-block">
 
+    <a id="sidebar-mobile" class="right hide-on-med-and-down">
 
-        <ul class="nav-content">
-            <ul class="navbar fixed-content d-block float:right;">
-                <li class="nav"><a href="index.html">Home</a></li>
-                <li class="nav"><a href="product.html">Products</a></li>
-                <li class="nav"><a href="gallery.html">Gallery</a></li>
-                <li class="nav"><a href="contact.html">Contact us</a></li>
+        <a class="nav-links"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+            <a href="product.html">Products</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact </a>
             </ul>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons bar"></i></a>
-            <nav-a id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="index.html">About</a></li>
-                <li><a href="packages.html">Packages</a></li>
-                <li><a href="admin.html">Admin
-                <li class="sidenav" id="mobile-demo">
-                <li><a href="about.html">About</a></li>
-                <li><a href="Packages.html">Packages</a></li>
-                <li><a href="admin.html">Admin</a></li>
-                </li>
-                <i class="material-icons bar"></i></a>
+            <ul class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About
+
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="book.html">Flight bookings</a>
+                        <a class="dropdown-item" href="book.html">Accommodation</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="book.html">Game drives</a>
+                    </div>
                 </a>
-            </nav-a>
-
-    </nav>
+            </ul>
 </nav>
-<main>
+<main class="s12  autocomplete-items">
+    <a href="index.html" class="col s12 ">
 
-    <footer class="col opacity margin-bottom">
-        <h5>Find Us On</h5>
-        <div class="xlarge padding-16">
-            <i class="fa fa-facebook-official hover-opacity"></i>
-            <i class="fa fa-instagram hover-opacity"></i>
-            <i class="fa fa-snapchat hover-opacity"></i>
-            <i class="fa fa-pinterest-p hover-opacity"></i>
-            <i class="fa fa-twitter hover-opacity"></i>
-            <i class="fa fa-linkedin hover-opacity"></i>
-        </div>
-        <form action="/action_page.php">
-            <input type="file" id="myFile" name="filename">
-            <input type="submit">
-        </form>
-        <!-- pop upform 3wschool snippet  -->
+        <img src="assets/images/shoes-434918_1920.jpg" class="img-fluid img-thumbnail" alt="logo">
+
+        Leisure travel
+
+        <img src="assets/images/jade-m.jpg" class="img-fluid img-thumbnail" alt="safari">
+        National parks..
+
+        <img src="assets/images/jade-m.jpg" class="img-fluid img-thumbnail" alt="safari">
+        National parks..
+
+        <img src="assets/images/jade-m.jpg" class="img-fluid img-thumbnail" alt="safari">
+        National parks..
+
+        <img src="assets/images/jade-m.jpg" class="img-fluid img-thumbnail" alt="safari">
+        National parks..
 
 
-        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="hover-text-green" class="container" style="background-color:#f7cc55"> Xascapade</a>
-        </p>
+
+        <footer class="col opacity margin-bottom">
+            <h5>Find Us On</h5>
+            <div class="xlarge padding-16">
+                <i class="fa fa-facebook-official hover-opacity"></i>
+                <i class="fa fa-instagram hover-opacity"></i>
+                <i class="fa fa-snapchat hover-opacity"></i>
+                <i class="fa fa-pinterest-p hover-opacity"></i>
+                <i class="fa fa-twitter hover-opacity"></i>
+                <i class="fa fa-linkedin hover-opacity"></i>
+            </div>
+            <form action="/action_page.php">
+                <input type="file" id="myFile" name="filename">
+                <input type="submit">
+            </form>
+            <!-- pop upform 3wschool snippet  -->
+
+
+            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="hover-text-green" class="container" style="background-color:#f7cc55"> Xascapade</a>
+            </p>
 </main>
 </section>
 </form>
@@ -102,6 +119,33 @@
         document.getElementById(linkName).style.display = "block";
         evt.currentTarget.className += " teal";
     }
+    // materialise media snippet
+    ocument.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.materialboxed');
+        var instances = M.Materialbox.init(elems, options);
+    });
+
+    // Or with jQuery
+
+    $(document).ready(function() {
+        $('.materialboxed').materialbox();
+    });
+    // 3wschool youtube snippet
+    function myFunction(x) {
+        if (x.matches) { // If media query matches
+            document.body.style.backgroundColor = "#f1f1f1";
+        } else {
+            document.body.style.backgroundImage = "#fff";
+        }
+    }
+
+    function myFunction() {
+        var x = document.getElementById("myVideo").duration;
+        document.getElementById("demo").innerHTML = x;
+    }
+    var x = window.matchMedia("(max-width: 700px)")
+    myFunction(x) // Call listener function at run time
+    x.addListener(myFunction) // Attach listener function on state changes
     // autocomplete w3schhol snippet
     function autocomplete(inp, arr) {
         /*the autocomplete function takes two arguments,
