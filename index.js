@@ -12,6 +12,14 @@ function openLink(evt, linkName) {
     document.getElementById(linkName).style.display = "block";
     evt.currentTarget.className += " teal";
 }
+
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+}
 // autocomplete w3schhol snippet
 function autocomplete(inp, arr) {
     /*the autocomplete function takes two arguments,
