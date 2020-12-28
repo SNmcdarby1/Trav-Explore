@@ -16,24 +16,46 @@
     <section>
 
 <body class="container-fluid ">
-
-    <nav class="navbar navbar-expand-lg navbar-teal bg-yellow">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
 
         <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="navbar  mr-12 tr-3 container-fluid hide-med-">
-            <a href=" index.html" class="right" onclick="openLink(event, 'Home');"><i class="fa fa-home w3-margin-right"></i>HOME</a>
-            <a href="about.html" class="right" onclick="openLink(event, 'About');"><i class="fa fa-comment-o w3-margin-right"></i>ABOUT</a>
-            <a href="package.html" class="right" onclick="openLink(event, 'Packages');"><i class="fa fa-list margin-right"></i>PACKAGES</a>
-            <a href="book.html" class="right" onclick="openLink(event, 'Hotel');"><i class="fa fa-hotel margin-right"></i>BOOKING</a>
-            <a href="gallery.html" class="right" onclick="openLink(event, 'Gallery');"><i class="fa fa-camera-retro margin-right"></i>>GALLERY</a>
-            <a href="admin.html" class="right" onclick="openLink(event, 'Game reserves');"><i class="fa fa-truck margin-right"></i>TOURS</a>
-            <a href="contact.html" class="right" onclick="openLink(event, 'Contact');"><i class="fa fa-tty margin-right"></i>CONTACT</a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"> <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        About
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="admin.html">About</a>
+                        <a class="dropdown-item" href="reservation.html">Profile</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="admin.html">Admin</a>
+                </li>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="package.html" id="navbar Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Products
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="book.html">Flight bookings</a>
+                        <a class="dropdown-item" href="book.html">Accommodation</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="book.html">Game drives</a>
+                    </div>
+                <li class="nav-item">
+                    <a class="nav-link enabled" href="contact.html">Contact</a>
+                </li>
+            </ul>
+
         </div>
-
-
     </nav>
     <script type="text/javascript" src="https://res.perfectibe.com/scripts/calendar.js"></script>
     <script type="text/javascript" src="https://res.perfectibe.com/scripts/jsDate.js"></script>
@@ -41,249 +63,256 @@
     <script type="text/javascript" src="https://res.perfectibe.com/scripts/dropdown.js"></script>
     <script type="text/javascript"></script>
 
-    <body>
-
-        <Section class="container-fluid inline-block">
-            <div class="background-image" id="bgimg1">
-                <hr class="my-4 inline-block col-sm-4" id="bgimg1">
-                <div class="container">
-                    <div class="container">
-                        <form action="/action_page.php">
-
-                            <h4>Reservation details</h4>
-                            <div class="input-container">
-                                <i class="fa fa-user icon"></i>
-                                <input class="input-field" type="text" placeholder="Username" name="usrnm">
-                            </div>
-
-                            <div class="input-container">
-                                <i class="fa fa-envelope icon"></i>
-                                <input class="input-field" type="text" placeholder="Email" name="email">
-                            </div>
-
-                            <div class="input-container">
-                                <i class="fa fa-key icon"></i>
-                                <input class="input-field" type="password" placeholder="Password" name="psw">
-                            </div>
-                            <form action="/action_page.php">
-                                <input type="file" id="myFile" name="filename">
-                                <input type="submit">
-                            </form>
-
-
-                        </form>
-                    </div>
-                    <h2>Contact</h2>
-                    <p>Let us book your next trip!</p>
-                    <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
-                    <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
-                    <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
-                    <form action="/action_page.php" target="_blank">
-                        <p><input class="w3-input padding-16 border" type="text" placeholder="Name" required name="Name">
-                        </p>
-                        <p><input class="input padding-16 border" type="text" placeholder="Email" required name="Email">
-                        </p>
-                        <p><input class="input padding-16 border" type="text" placeholder="Message" required name="Message">
-                        </p>
-                        <p><button class="button  padding-large" type="submit">SEND MESSAGE</button></p>
-                    </form>
-                    <div class="panel padding-16 white opacity card hover-opacity-off">
-                        <h2>Get the best offers first!</h2>
-
-                        <p>Join our newsletter.</p>
-                        <label>E-mail</label>
-                        <input class="input border" type="text" placeholder="Your Email address">
-                        <button type="button" class="button red margin-top">Subscribe</button>
-                    </div>
-                    <form action="action_page.php" method="post">
-                        <div class="imgcontainer">
-                            <img src="img_avatar2.png" alt="Avatar" class="avatar">
-                        </div>
-
-                        <div class="container">
-                            <label for="uname"><b>Username</b></label>
-                            <input type="text" placeholder="Enter Username" name="uname" required>
-
-                            <label for="psw"><b>Password</b></label>
-                            <input type="password" placeholder="Enter Password" name="psw" required>
-
-                            <button type="submit">Login</button>
-                            <label>
-                                <input type="checkbox" checked="checked" name="remember"> Remember me
-                            </label>
-                        </div>
-
-                        <div class="container" style="background-color:#f7cc55">
-                            <button type="button" class="cancelbtn">Cancel</button>
-                            <span class="pswbtn">Forgot <a href="#">password?</a></span>
-                            <input class="input padding-16 border" type="text" placeholder="Message" required name="Message">
-                        </div>
-                    </form>
+    <body class="container-fluid ">
+        <main>
+            <!-- box images -->
+            <div>
+                <div class="about-section">
+                    <h1>About Us Page</h1>
+                    <p>Some text about who we are and what we do.</p>
+                    <p>Resize the browser window to see that this page is responsive by the way.</p>
                 </div>
-                <!-- customer Reservation details-->
-
-
-                <body>
-                    <div class="searchForm" style="height:375px" ng-app="firstApp" ng-controller="formController">
-                        <h4 style="text-align: center">Travel and Entertainment Search</h4>
-
-                        <form action="" role="form" id="form" class="form-horizontal" style="margin-left: 86px" method="get" ng-submit="processForm()">
-
-                            <div class="form-group">
-                                <label for="keyword" class="col-sm-2 control-lable">keyword*</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="keyword" ng-model="formData.keyword" name="keyword" data-bv-message="Please enter a keyword" required data-bv-notempty-message="" style="width: 386px; margin-left: 21px;">
-                                </div>
-                            </div>
-
-
-                            <div class="form-group">
-                                <label for="Category" class="col-sm-2 control-lable">Category</label>
-                                <div class="col-sm-10">
-                                    <select name="category" class="form-control" id="Category" ng-model="formData.category" style="margin-left: 23px; width: 270px;">
-                                        <option value="Default">Default</option>
-                                        <option value="Airport">Airport</option>
-                                        <option value="Amusement_Park">Amusement Park</option>
-                                        <option value="Aquarium">Aquarium</option>
-                                        <option value="Art_Gallery">Art Gallery</option>
-                                        <option value="Bakery">Bakery</option>
-                                        <option value="Bar">Bar</option>
-                                        <option value="Beauty_Salon">Beauty Salon</option>
-                                        <option value="Bowling_Alley">Bowling Alley</option>
-                                        <option value="Bus_Station">Bus Station</option>
-                                        <option value="Cafe">Cafe</option>
-                                        <option value="Campground">Campground</option>
-                                        <option value="Car_Rental">Car Rental</option>
-                                        <option value="Casino">Casino</option>
-                                        <option value="Lodging">Lodging</option>
-                                        <option value="Movie_Theater">Movie Theater</option>
-                                        <option value="Museum">Museum</option>
-                                        <option value="Night_Club">Night Club</option>
-                                        <option value="Park">Park</option>
-                                        <option value="Parking">Parking</option>
-                                        <option value="Restaurant">Restaurant</option>
-                                        <option value="Shopping_Mall">Shopping Mall</option>
-                                        <option value="Stadium">Stadium</option>
-                                        <option value="Subway_Station">Subway Station</option>
-                                        <option value="Taxi_Stand">Taxi Stand</option>
-                                        <option value="Train_Station">Train Station</option>
-                                        <option value="Transit_Station">Transit Station</option>
-                                        <option value="Travel_Agency">Travel Agency</option>
-                                        <option value="Zoo">Zoo</option>
-                                    </select>
-                                </div>
-                            </div>
-
-
-                            <!-- End page content -->
-                    </div>
-                    <!-- w3school snippet -->
-                    <!-- Footer -->
-                    <!-- Footer -->
-                    <footer class="table mr-12 tr-3 container  container-fluid">
-
-
-                        <section class="col-sm s12 progress-section social">
+                <Section class="container-fluid inline-block">
+                    <div class="background-image" id="bgimg1">
+                        <hr class="my-4 inline-block col-sm-4" id="bgimg1">
+                        <div class="container">
                             <div class="container">
                                 <form action="/action_page.php">
-                                    <div class="row">
-                                        <h5 style="text-align:center">Login with Social Media</h5>
-                                        <div class="vl">
-                                            <span class="vl-innertext">or</span>
-                                        </div>
 
-                                        <div class="col-sm">
-                                            <a href="#" class="fb btn">
-                                                <i class="fa fa-facebook fa-fw"></i>
-                                                Facebook
-                                            </a>
-                                            <a href="#" class="twitter btn">
-                                                <i class="fa fa-twitter fa-fw"></i>
-                                                Twitter
-                                            </a>
-                                            <a href="#" class="google btn">
-                                                <i class="fa fa-google fa-fw"></i>
-                                                Google+
-                                            </a>
-                                        </div>
-
-                                        <div class="col-sm">
-                                            <div class="hide-md-lg">
-                                                <p>Or sign in manually:</p>
-                                            </div>
-
-                                            <input type="text" name="username" placeholder="Username" required>
-                                            <input type="password" name="password" placeholder="Password" required>
-                                            <input type="submit" value="Login">
-                                        </div>
-
+                                    <h4>Reservation details</h4>
+                                    <div class="input-container">
+                                        <i class="fa fa-user icon"></i>
+                                        <input class="input-field" type="text" placeholder="Username" name="usrnm">
                                     </div>
+
+                                    <div class="input-container">
+                                        <i class="fa fa-envelope icon"></i>
+                                        <input class="input-field" type="text" placeholder="Email" name="email">
+                                    </div>
+
+                                    <div class="input-container">
+                                        <i class="fa fa-key icon"></i>
+                                        <input class="input-field" type="password" placeholder="Password" name="psw">
+                                    </div>
+                                    <form action="/action_page.php">
+                                        <input type="file" id="myFile" name="filename">
+                                        <input type="submit">
+                                    </form>
+
+
                                 </form>
                             </div>
+                            <h2>Contact</h2>
+                            <p>Let us book your next trip!</p>
+                            <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
+                            <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+                            <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+                            <form action="/action_page.php" target="_blank">
+                                <p><input class="w3-input padding-16 border" type="text" placeholder="Name" required name="Name">
+                                </p>
+                                <p><input class="input padding-16 border" type="text" placeholder="Email" required name="Email">
+                                </p>
+                                <p><input class="input padding-16 border" type="text" placeholder="Message" required name="Message">
+                                </p>
+                                <p><button class="button  padding-large" type="submit">SEND MESSAGE</button></p>
+                            </form>
+                            <div class="panel padding-16 white opacity card hover-opacity-off">
+                                <h2>Get the best offers first!</h2>
 
-                            <div class="bottom-container">
-                                <div class="row">
-                                    <div class="col-sm">
-                                        <a href="#" style="color:white" class="btn">
-                                            <p>Sign up</p>
-                                        </a>
-                                    </div>
-                                    <div class="col-sm">
-                                        <a href="#" style="color:white" class="btn">Forgot password?</a>
-                                    </div>
-                                </div>
+                                <p>Join our newsletter.</p>
+                                <label>E-mail</label>
+                                <input class="input border" type="text" placeholder="Your Email address">
+                                <button type="button" class="button red margin-top">Subscribe</button>
                             </div>
-                        </section>
-                        <!-- w3school snippet -->
-                        <!-- Footer -->
+                            <form action="action_page.php" method="post">
+                                <div class="imgcontainer">
+                                    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                                </div>
+
+                                <div class="container">
+                                    <label for="uname"><b>Username</b></label>
+                                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                                    <label for="psw"><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                    <button type="submit">Login</button>
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                                    </label>
+                                </div>
+
+                                <div class="container" style="background-color:#f7cc55">
+                                    <button type="button" class="cancelbtn">Cancel</button>
+                                    <span class="pswbtn">Forgot <a href="#">password?</a></span>
+                                    <input class="input padding-16 border" type="text" placeholder="Message" required name="Message">
+                                </div>
+                            </form>
+                        </div>
+                        <!-- customer Reservation details-->
 
 
+                        <body>
+                            <div class="searchForm" style="height:375px" ng-app="firstApp" ng-controller="formController">
+                                <h4 style="text-align: center">Travel and Entertainment Search</h4>
+
+                                <form action="" role="form" id="form" class="form-horizontal" style="margin-left: 86px" method="get" ng-submit="processForm()">
+
+                                    <div class="form-group">
+                                        <label for="keyword" class="col-sm-2 control-lable">keyword*</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="keyword" ng-model="formData.keyword" name="keyword" data-bv-message="Please enter a keyword" required data-bv-notempty-message="" style="width: 386px; margin-left: 21px;">
+                                        </div>
+                                    </div>
 
 
-                        <footer class="autocomplete-items s12 opacity margin-bottom   container-fluid">
+                                    <div class="form-group">
+                                        <label for="Category" class="col-sm-2 control-lable">Category</label>
+                                        <div class="col-sm-10">
+                                            <select name="category" class="form-control" id="Category" ng-model="formData.category" style="margin-left: 23px; width: 270px;">
+                                                <option value="Default">Default</option>
+                                                <option value="Airport">Airport</option>
+                                                <option value="Amusement_Park">Amusement Park</option>
+                                                <option value="Aquarium">Aquarium</option>
+                                                <option value="Art_Gallery">Art Gallery</option>
+                                                <option value="Bakery">Bakery</option>
+                                                <option value="Bar">Bar</option>
+                                                <option value="Beauty_Salon">Beauty Salon</option>
+                                                <option value="Bowling_Alley">Bowling Alley</option>
+                                                <option value="Bus_Station">Bus Station</option>
+                                                <option value="Cafe">Cafe</option>
+                                                <option value="Campground">Campground</option>
+                                                <option value="Car_Rental">Car Rental</option>
+                                                <option value="Casino">Casino</option>
+                                                <option value="Lodging">Lodging</option>
+                                                <option value="Movie_Theater">Movie Theater</option>
+                                                <option value="Museum">Museum</option>
+                                                <option value="Night_Club">Night Club</option>
+                                                <option value="Park">Park</option>
+                                                <option value="Parking">Parking</option>
+                                                <option value="Restaurant">Restaurant</option>
+                                                <option value="Shopping_Mall">Shopping Mall</option>
+                                                <option value="Stadium">Stadium</option>
+                                                <option value="Subway_Station">Subway Station</option>
+                                                <option value="Taxi_Stand">Taxi Stand</option>
+                                                <option value="Train_Station">Train Station</option>
+                                                <option value="Transit_Station">Transit Station</option>
+                                                <option value="Travel_Agency">Travel Agency</option>
+                                                <option value="Zoo">Zoo</option>
+                                            </select>
+                                        </div>
+                                    </div>
 
-                            <!-- pop upform 3wschool snippet  -->
-                            <form action="/action_page.php">
-                                <div class="row">
 
+                                    <!-- End page content -->
+                            </div>
+                            <!-- w3school snippet -->
+                            <!-- Footer -->
+                            <!-- Footer -->
+                            <footer class="table mr-12 tr-3 container  container-fluid">
+
+
+                                <section class="col-sm s12 progress-section social">
                                     <div class="container">
                                         <form action="/action_page.php">
-                                            <h5>Find Us On</h5>
-                                            <div class="xlarge padding-16">
-                                                <i class="fa fa-facebook-official hover-opacity"></i>
-                                                <i class="fa fa-instagram hover-opacity"></i>
-                                                <i class="fa fa-snapchat hover-opacity"></i>
-                                                <i class="fa fa-pinterest-p hover-opacity"></i>
-                                                <i class="fa fa-twitter hover-opacity"></i>
-                                                <i class="fa fa-linkedin hover-opacity"></i>
+                                            <div class="row">
+                                                <h5 style="text-align:center">Login with Social Media</h5>
+                                                <div class="vl">
+                                                    <span class="vl-innertext">or</span>
+                                                </div>
+
+                                                <div class="col-sm">
+                                                    <a href="#" class="fb btn">
+                                                        <i class="fa fa-facebook fa-fw"></i>
+                                                        Facebook
+                                                    </a>
+                                                    <a href="#" class="twitter btn">
+                                                        <i class="fa fa-twitter fa-fw"></i>
+                                                        Twitter
+                                                    </a>
+                                                    <a href="#" class="google btn">
+                                                        <i class="fa fa-google fa-fw"></i>
+                                                        Google+
+                                                    </a>
+                                                </div>
+
+                                                <div class="col-sm">
+                                                    <div class="hide-md-lg">
+                                                        <p>Or sign in manually:</p>
+                                                    </div>
+
+                                                    <input type="text" name="username" placeholder="Username" required>
+                                                    <input type="password" name="password" placeholder="Password" required>
+                                                    <input type="submit" value="Login">
+                                                </div>
+
                                             </div>
                                         </form>
                                     </div>
 
-                                    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="hover-text-green" class="container" style="background-color:#f7cc55"> Xascapade</a>
-                                    </p>
-                                </div>
-                            </form>
+                                    <div class="bottom-container">
+                                        <div class="row">
+                                            <div class="col-sm">
+                                                <a href="#" style="color:white" class="btn">
+                                                    <p>Sign up</p>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm">
+                                                <a href="#" style="color:white" class="btn">Forgot password?</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- w3school snippet -->
+                                <!-- Footer -->
 
-        </section>
-        </form>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <!-- i was inspired by the below link in github by -->
-        <script type="text/javascript" src="https://res.perfectibe.com/scripts/calendar.js"></script>
-        <script type="text/javascript" src="https://res.perfectibe.com/scripts/jsDate.js"></script>
-        <script type="text/javascript" src="https://res.perfectibe.com/scripts/pibe.js"></script>
-        <script type="text/javascript" src="https://res.perfectibe.com/scripts/dropdown.js"></script>
-        <script type="text/javascript">
-        </script>
-        <!--Bootstrap snippet-->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script>
-            < /footer> < /
-            body >
 
-                <
-                /html>
+
+                                <footer class="autocomplete-items s12 opacity margin-bottom   container-fluid">
+
+                                    <!-- pop upform 3wschool snippet  -->
+                                    <form action="/action_page.php">
+                                        <div class="row">
+
+                                            <div class="container">
+                                                <form action="/action_page.php">
+                                                    <h5>Find Us On</h5>
+                                                    <div class="xlarge padding-16">
+                                                        <i class="fa fa-facebook-official hover-opacity"></i>
+                                                        <i class="fa fa-instagram hover-opacity"></i>
+                                                        <i class="fa fa-snapchat hover-opacity"></i>
+                                                        <i class="fa fa-pinterest-p hover-opacity"></i>
+                                                        <i class="fa fa-twitter hover-opacity"></i>
+                                                        <i class="fa fa-linkedin hover-opacity"></i>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="hover-text-green" class="container" style="background-color:#f7cc55"> Xascapade</a>
+                                            </p>
+                                        </div>
+                                    </form>
+
+                </section>
+                </form>
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+                <!-- i was inspired by the below link in github by -->
+                <script type="text/javascript" src="https://res.perfectibe.com/scripts/calendar.js"></script>
+                <script type="text/javascript" src="https://res.perfectibe.com/scripts/jsDate.js"></script>
+                <script type="text/javascript" src="https://res.perfectibe.com/scripts/pibe.js"></script>
+                <script type="text/javascript" src="https://res.perfectibe.com/scripts/dropdown.js"></script>
+                <script type="text/javascript">
+                </script>
+                <!--Bootstrap snippet-->
+                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+                </script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+                <script>
+                    < /footer> < /
+                    body >
+
+                        <
+                        /html>
