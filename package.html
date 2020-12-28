@@ -10,277 +10,297 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg==" crossorigin="anonymous" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <title>XASCAPADE</title>
+    <section>
 
-</head>
-<section>
+<body class="container-fluid ">
 
-    <body class="container-fluid ">
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-teal bg-yellow">
 
 
-            <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar  mr-12 tr-3 container-fluid hide-med-">
+            <a href=" index.html" class="right" onclick="openLink(event, 'Home');"><i class="fa fa-home w3-margin-right"></i>HOME</a>
+            <a href="about.html" class="right" onclick="openLink(event, 'About');"><i class="fa fa-comment-o w3-margin-right"></i>ABOUT</a>
+            <a href="package.html" class="right" onclick="openLink(event, 'Packages');"><i class="fa fa-list margin-right"></i>PACKAGES</a>
+            <a href="book.html" class="right" onclick="openLink(event, 'Hotel');"><i class="fa fa-hotel margin-right"></i>BOOKING</a>
+            <a href="gallery.html" class="right" onclick="openLink(event, 'Gallery');"><i class="fa fa-camera-retro margin-right"></i>>GALLERY</a>
+            <a href="admin.html" class="right" onclick="openLink(event, 'Game reserves');"><i class="fa fa-truck margin-right"></i>TOURS</a>
+            <a href="contact.html" class="right" onclick="openLink(event, 'Contact');"><i class="fa fa-tty margin-right"></i>CONTACT</a>
+        </div>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            About
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="admin.html">About</a>
-                            <a class="dropdown-item" href="reservation.html">Profile</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="admin.html">Admin</a>
+    </nav>
+    <script type="text/javascript" src="https://res.perfectibe.com/scripts/calendar.js"></script>
+    <script type="text/javascript" src="https://res.perfectibe.com/scripts/jsDate.js"></script>
+    <script type="text/javascript" src="https://res.perfectibe.com/scripts/pibe.js"></script>
+    <script type="text/javascript" src="https://res.perfectibe.com/scripts/dropdown.js"></script>
+    <script type="text/javascript"></script>
+
+    <body>
+        <main class="section-column autocomplete-items">
+            <section class=" display-box content hide-small" style="max-width:150">
+                <div class=" display-cover" style="width:65%">
+                    <div class="bar mr-12 tr-3 ">
+                        <button href="book.html" class="bar-item button tablink" onclick="openLink(event, =" book.html" class="bar-item button tablink" onclick="openLink(event, 'Safari');"><i class="fa fa-tour margin-right"></i>
+                            <h3>Safari packages..</h3><i class="fas fa-h1 badge-heading  ">
+
+                        </button>
+
+                    </div>
+                    <h5>Destination </h5>
+                    <div class="row-padding" style="margin:10 -16pxass=" label>
+                        <div class=placeholder="Arrival Airport">
+                            <div class="half">
+                                <label>Arrival Airport</label>
+                                <input class="input border" type="text" placeholder="Pick up point">
+                            </div>
+                            <section class="  section-colunm s12">
+                                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+                                <!-- 3wschool snippet -->
+                                <ul id="myUL">
+                                    <li><a href="#">1 Days safari</a></li>
+                                    <li><a href="#">2 Days safari</a></li>
+
+                                    <li><a href="#">3 Days safari</a></li>
+                                    <li><a href="#">5 Days safari</a></li>
+
+                                    <li><a href="#">7 Days Safari</a></li>
+                                    <li><a href="#">10 Days Safari</a></li>
+                                    <li><a href="#">12 Days Safari</a></li>
+                                </ul>
+                            </section>
+                            <p><button class="button dark-grey">Search and find dates</button></p>
                         </div>
-                    </li>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="package.html" id="navbar Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Products
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="book.html">Flight bookings</a>
-                            <a class="dropdown-item" href="book.html">Accommodation</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="book.html">Game drives</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link enabled" href="contact.html">Contact</a>
-                    </li>
-                </ul>
+                        <form autocomplete="off" action="/action_page.php">
+                            <div class="autocomplete" style="width:300px;">
+                                <input id="myInput" type="text" name="myCountry" placeholder="Game reserve">
+                            </div>
 
+                            <div id="Hotel" class="container white padding-16 myLink">
+                                <h3>Find the best safari package</h3>
+                                <p>Book a hotel with us and get the best safari rates and promotions.</p>
+                                <p>We know hotels - we know comfort.</p>
+                                <p><button class="button dark-grey">Search Hotels</button></p>
+                            </div>
+                            <section class="card tr-m">
+                                <!-- Header -->
+
+                            </section>
+
+                            <div id="Car" class="container white padding-16 myLink">
+                                <h3>Best Safari experience in the world!</h3>
+                                <span style="deep-orange">DISCOUNT!</span>
+                                <p>Special offer
+                                </p>
+                                <input class="input border" type="text" placeholder="Pick-up point">
+
+                                <div>
+                                    <box class="box-4">
+                                        <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                                            <source srcset="assets/images/jade-m.jpg" type="image/svg+xml">
+                                            <img src="assets/images/jade-m.jpg" class="img-fluid img-thumbnail" alt="Rooms">
+                                        </picture>
+                                        </bx-4>
+
+                                        <p>
+                                            <button class="button dark-grey">Search Availability</button></p>
+                                </div>
+        </main>
+
+        <section class="section-colunm autocomplete-items  container-fluid">
+            <div class="container">
+                <!-- 3wschool timeline -->
+                <div class="timeline">
+                    <div class="container left">
+                        <div class="content">
+                            <h2>2017</h2>
+                            <p>National parks..</p>
+                        </div>
+                    </div>
+                    <div class="container right">
+                        <div class="content">
+                            <h2>2016</h2>
+                            <p>Safari packages..</p>
+                        </div>
+                    </div>
+                    <div class="container left">
+                        <div class="content">
+                            <h2>2017</h2>
+                            <p>National parks..</p>
+                        </div>
+                    </div>
+                    <div class="container right">
+                        <div class="content">
+                            <h2>2016</h2>
+                            <p>Safari packages..</p>
+                        </div>
+                    </div>
+                    <div class="container left">
+                        <div class="content">
+                            <h2>2017</h2>
+                            <p>National parks..</p>
+                        </div>
+                    </div>
+                    <div class="container right">
+                        <div class="content">
+                            <h2>2016</h2>
+                            <p>Safari packages..</p>
+                            </i>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+        <footer class="table mr-12 tr-3 container-fluid">
+
+
+            <section class="col progress-section social"></section>
+            <!-- w3school snippet -->
+            <!-- Footer -->
+            <div class="form">
+                <form action="/action_page.php">
+                    <input type="text" name="username" placeholder="Username" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <input type="submit" value="Login">
             </div>
-        </nav>
+            </form>
+            <form class="col" class="card autocomplete-items hide-small" action="/action_page.php">
+                <h6 style=" text-align:center wrap"></h6>
 
-        <body class="container-fluid">
-            <main class="section-column container-fluid autocomplete-items">
-                <section class="container  display-container-fluid content hide-small" style="max-width:150">
-                    <div class=" display-cover" style="width:65%">
-                        <div class="bar mr-12 tr-3 container-fluid">
-                            <button href="book.html" class="bar-item button tablink" onclick="openLink(event, =" book.html" class="bar-item button tablink" onclick="openLink(event, 'Safari');"><i class="fa fa-tour margin-right"></i>Safari packages</button>
+                <h5 class="card autocomplete-items hide-small">Login with Social Media </h5>
 
-                        </div>
-                        <h3>Packages </h3>
-                        <div class="row-padding" style="margin:10 -16pxass=" label>
-                            <div class=placeholder="Arrival Airport">
-                                <div class="half">
-                                    <label>Arrival Airport</label>
-                                    <input class="input border" type="text" placeholder="Destination">
+                <div class="row">
+                    <a href="#" class="fb btn  btn content hide-small ">
+                        <i class="fa fa-facebook fa-fw"></i>
+                        Facebook
+                    </a>
+                    <a h ref="#" class="twitter btn content hide-small">
+                        <i class=" fa fa-twitter fa-fw"></i>
+                        Twitter
+
+                    </a>
+                    <a href="#" class="google btn  btn content hide-small">
+                        <i class="fa fa-google fa-fw"></i>
+                        Google+
+                    </a>
+                </div>
+
+            </form>
+
+            <!-- Footer -->
+            <footer class="table mr-12 tr-3 container  container-fluid">
+
+
+                <section class="col-sm s12 progress-section social">
+                    <div class="container">
+                        <form action="/action_page.php">
+                            <div class="row">
+                                <h5 style="text-align:center">Login with Social Media</h5>
+                                <div class="vl">
+                                    <span class="vl-innertext">or</span>
                                 </div>
-                                <v>
-                                    <p><button class="button dark-grey">Search and find dates</button></p>
-                            </div>
-                            <form autocomplete="off" action="/action_page.php">
-                                <div class="autocomplete" style="width:300px;">
-                                    <input id="myInput" type="text" name="myCountry" placeholder="Game reserve">
+
+                                <div class="col-sm">
+                                    <a href="#" class="fb btn">
+                                        <i class="fa fa-facebook fa-fw"></i>
+                                        Facebook
+                                    </a>
+                                    <a href="#" class="twitter btn">
+                                        <i class="fa fa-twitter fa-fw"></i>
+                                        Twitter
+                                    </a>
+                                    <a href="#" class="google btn">
+                                        <i class="fa fa-google fa-fw"></i>
+                                        Google+
+                                    </a>
                                 </div>
 
-                                <div id="Hotel" class="container white padding-16 myLink">
-                                    <h3>Find the best safari package</h3>
-                                    <p>Book a hotel with us and get the best safari rates and promotions.</p>
-                                    <p>We know hotels - we know comfort.</p>
-                                    <p><button class="button dark-grey">Search Hotels</button></p>
-                                </div>
-                                <section class="card tr-m">
-                                    <!-- Header -->
-
-                                </section>
-
-                                <div id="Car" class="container white padding-16 myLink">
-                                    <h3>Best Safari experience in the world!</h3>
-                                    <span style="deep-orange">DISCOUNT!</span>
-                                    <p>Special offer
-                                    </p>
-                                    <input class="input border" type="text" placeholder="Pick-up point">
-
-                                    <div>
-                                        <box class="box-4">
-                                            <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                                                <source srcset="assets/images/jade-m.jpg" type="image/svg+xml">
-                                                <img src="assets/images/jade-m.jpg" class="img-fluid img-thumbnail" alt="Rooms">
-                                            </picture>
-                                            </bx-4>
-
-                                            <p>
-                                                <button class="button dark-grey">Search Availability</button></p>
+                                <div class="col-sm">
+                                    <div class="hide-md-lg">
+                                        <p>Or sign in manually:</p>
                                     </div>
-            </main>
-            <section class="section-colunm autocomplete-items  container-fluid">
-                <div class="container">
-                    <!-- 3wschool timeline -->
-                    <div class="timeline">
-                        <div class="container left">
-                            <div class="content">
-                                <h2>2017</h2>
-                                <p>National parks..</p>
+
+                                    <input type="text" name="username" placeholder="Username" required>
+                                    <input type="password" name="password" placeholder="Password" required>
+                                    <input type="submit" value="Login">
+                                </div>
+
                             </div>
-                        </div>
-                        <div class="container right">
-                            <div class="content">
-                                <h2>2016</h2>
-                                <p>Safari packages..</p>
+                        </form>
+                    </div>
+
+                    <div class="bottom-container">
+                        <div class="row">
+                            <div class="col-sm">
+                                <a href="#" style="color:white" class="btn">
+                                    <p>Sign up</p>
+                                </a>
                             </div>
-                        </div>
-                        <div class="container left">
-                            <div class="content">
-                                <h2>2017</h2>
-                                <p>National parks..</p>
-                            </div>
-                        </div>
-                        <div class="container right">
-                            <div class="content">
-                                <h2>2016</h2>
-                                <p>Safari packages..</p>
-                            </div>
-                        </div>
-                        <div class="container left">
-                            <div class="content">
-                                <h2>2017</h2>
-                                <p>National parks..</p>
-                            </div>
-                        </div>
-                        <div class="container right">
-                            <div class="content">
-                                <h2>2016</h2>
-                                <p>Safari packages..</p>
+                            <div class="col-sm">
+                                <a href="#" style="color:white" class="btn">Forgot password?</a>
                             </div>
                         </div>
                     </div>
-
-            </section>
-            <footer class="table mr-12 tr-3 container-fluid">
-
-
-                <section class="col progress-section social"></section>
+                </section>
                 <!-- w3school snippet -->
                 <!-- Footer -->
 
-                <input type="text" name="username" placeholder="Username" required>
-                <input type="password" name="password" placeholder="Password" required>
-                <input type="submit" value="Login">
-                </div>
-                </form>
-                <form class="col" class="card autocomplete-items hide-small" action="/action_page.php">
-                    <h6 style=" text-align:center wrap"></h6>
 
-                    <h5 class="card autocomplete-items hide-small">Login with Social Media </h5>
 
-                    <div class="row">
-                        <a href="#" class="fb btn  btn content hide-small ">
-                            <i class="fa fa-facebook fa-fw"></i>
-                            Facebook
-                        </a>
-                        <a h ref="#" class="twitter btn content hide-small">
-                            <i class=" fa fa-twitter fa-fw"></i>
-                            Twitter
 
-                        </a>
-                        <a href="#" class="google btn  btn content hide-small">
-                            <i class="fa fa-google fa-fw"></i>
-                            Google+
-                        </a>
-                    </div>
+                <footer class="autocomplete-items s12 opacity margin-bottom   container-fluid">
 
-                </form>
-
-                <footer class="col opacity margin-bottom  container-fluid">
-                    <h5>Find Us On</h5>
-                    <div class="xlarge padding-16">
-                        <i class="fa fa-facebook-official hover-opacity"></i>
-                        <i class="fa fa-instagram hover-opacity"></i>
-                        <i class="fa fa-snapchat hover-opacity"></i>
-                        <i class="fa fa-pinterest-p hover-opacity"></i>
-                        <i class="fa fa-twitter hover-opacity"></i>
-                        <i class="fa fa-linkedin hover-opacity"></i>
-                    </div>
-                    <form action="/action_page.php">
-                        <input type="file" id="myFile" name="filename">
-                        <input type="submit">
-                    </form>
                     <!-- pop upform 3wschool snippet  -->
+                    <form action="/action_page.php">
+                        <div class="row">
 
-                    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="hover-text-green" class="container" style="background-color:#f7cc55"> Xascapade</a>
-                    </p>
-</section>
-</form>
-</Footer>
+                            <div class="container">
+                                <form action="/action_page.php">
+                                    <h5>Find Us On</h5>
+                                    <div class="xlarge padding-16">
+                                        <i class="fa fa-facebook-official hover-opacity"></i>
+                                        <i class="fa fa-instagram hover-opacity"></i>
+                                        <i class="fa fa-snapchat hover-opacity"></i>
+                                        <i class="fa fa-pinterest-p hover-opacity"></i>
+                                        <i class="fa fa-twitter hover-opacity"></i>
+                                        <i class="fa fa-linkedin hover-opacity"></i>
+                                    </div>
+                                </form>
+                            </div>
 
-<script type="text/javascript" src="https://res.perfectibe.com/scripts/calendar.js"></script>
-<script type="text/javascript" src="https://res.perfectibe.com/scripts/jsDate.js"></script>
-<script type="text/javascript" src="https://res.perfectibe.com/scripts/pibe.js"></script>
-<script type="text/javascript" src="https://res.perfectibe.com/scripts/dropdown.js"></script>
-<script type="text/javascript">
-    var enable_dropdown = true;
-    filterSelection("all")
+                            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="hover-text-green" class="container" style="background-color:#f7cc55"> Xascapade</a>
+                            </p>
+                        </div>
+                    </form>
 
-    function filterSelection(c) {
-        var x, i;
-        x = document.getElementsByClassName("filterDiv");
-        if (c == "all") c = "";
-        // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-        for (i = 0; i < x.length; i++) {
-            w3RemoveClass(x[i], "show");
-            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-        }
-    }
-    // w3school filter element
-    // Show filtered elements
-    function w3AddClass(element, name) {
-        var i, arr1, arr2;
-        arr1 = element.className.split(" ");
-        arr2 = name.split(" ");
-        for (i = 0; i < arr2.length; i++) {
-            if (arr1.indexOf(arr2[i]) == -1) {
-                element.className += " " + arr2[i];
-            }
-        }
-    }
+                    </section>
+                    </form>
+                </Footer>
+                <!-- materialised script snippet -->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+                <script type="text/javascript" src="https://res.perfectibe.com/scripts/calendar.js"></script>
+                <script type="text/javascript" src="https://res.perfectibe.com/scripts/jsDate.js"></script>
+                <script type="text/javascript" src="https://res.perfectibe.com/scripts/pibe.js"></script>
+                <script type="text/javascript" src="https://res.perfectibe.com/scripts/dropdown.js"></script>
+                <script type="text/javascript">
 
-    // Hide elements that are not selected
-    function w3RemoveClass(element, name) {
-        var i, arr1, arr2;
-        arr1 = element.className.split(" ");
-        arr2 = name.split(" ");
-        for (i = 0; i < arr2.length; i++) {
-            while (arr1.indexOf(arr2[i]) > -1) {
-                arr1.splice(arr1.indexOf(arr2[i]), 1);
-            }
-        }
-        element.className = arr1.join(" ");
-    }
+                </script>
+                </script>
+                <!-- materialised script snippet -->
 
-    // Add active class to the current control button (highlight it)
-    var btnContainer = document.getElementById("myBtnContainer");
-    var btns = btnContainer.getElementsByClassName("btn");
-    for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function() {
-            var current = document.getElementsByClassName("active");
-            current[0].className = current[0].className.replace(" active", "");
-            this.className += " active";
-        });
-    } <
-    /script < /
-    main > <
-        !--Bootstrap snippet-- >
-        <
-        script src = "https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity = "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin = "anonymous" >
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
+                !--Bootstrap snippet-- >
+
+                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+                    < script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                    integrity = "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                    crossorigin = "anonymous" >
+                </script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
 
 </html>
